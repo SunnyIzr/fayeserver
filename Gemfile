@@ -4,3 +4,6 @@ gem 'private_pub'
 gem 'puma'
 gem 'foreman'
 gem 'rails_12factor'
+
+gem 'dotenv-rails'
+gem 'thin'

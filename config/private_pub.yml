@@ -3,8 +3,12 @@
 #
 # Replace YOUR_APP with the heroku app name and YOUR_TOKEN with the
 # same token used in private_pub.yml of your rails project.
+development:
+  server: "http://localhost:9292/faye"
+  secret_token: ENV['SECRET_TOKEN']
+
 
 production:
-  server: "https://stoop-faye.herokuapp.com/faye"
-  secret_token: "caac912706e97fea4864b8bc7d26346cce11bed06b37027cf66e5db56c853740"
+  server: ENV['ENDPOINT']
+  secret_token: ENV['SECRET_TOKEN']
   signature_expiration: 3600 # one day
